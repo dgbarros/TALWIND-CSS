@@ -22,35 +22,35 @@
     </script>
 </head>
 <body class=" bg-cinza-background  flex justify-center items-center h-screen">
-    <main class="bg-white p-8  rounded-2xl">
+    <main class="bg-transparent p-8  rounded-2xl border border-white-500">
        <form class="">
         <div class="">
-            <input class="w-full mt-2 p-2" type="text" name="nome" required placeholder="Nome Completo">
+            <input class="w-full mt-2 p-2 border border-zinc-500 rounded-2xl" type="text" name="nome" required placeholder="Nome Completo">
         </div>
         <div>
-            <input class="w-full mt-2 p-2" type="email" name="email" required placeholder="Email">
+            <input class="w-full mt-2 p-2  border border-zinc-500 rounded-2xl" type="email" name="email" required placeholder="Email">
         </div>
         <div>
-            <input class="w-full mt-2 p-2" type="tel" name="telefone" required placeholder="Telefone">
+            <input class="w-full mt-2 p-2  border border-zinc-500 rounded-2xl" type="tel" name="telefone" required placeholder="Telefone">
         </div>
         <div  class="flex flex-col">
-            <label class="m-2" ><strong>Conte-nos suas experiências</strong></label>
-                <textarea class="p-4" row="15" style="width: 26em" id="problema" name="problema"></textarea>
+            <label class="m-2 text-white" ><strong>Conte-nos suas experiências</strong></label>
+                <textarea class="p-4  border border-zinc-500 rounded-2xl" row="15" style="width: 26em" id="problema" name="problema"></textarea>
         </div>
         <div class="flex flex-col">
-            <label class="m-2" ><strong>Objetivo:</strong></label>
-            <label>
+            <label class="m-2 text-white" ><strong>Objetivo:</strong></label>
+            <label class="text-white" >
                 <input type="radio" name="servicos" value="alinhamento"> Membresia
             </label>
-            <label>
+            <label class="text-white" >
                 <input type="radio" name="servicos" value="funilaria"> Membresia
             </label>
-            <label>
+            <label class="text-white" >
                 <input type="radio" name="servicos" value="revisao"> Membresia
             </label>
         </div>
-
-        <button class=" mt-6 p-3 w-full bg-black text-white rounded-2xl" type="submit"><a href="caminho.html">Enviar</a></button>
+        
+         <button class=" mt-6 p-3 w-full bg-black text-white rounded-2xl" ><a href="caminho.html">Enviar</a></button>
        </form>
     </main>
 </body>
