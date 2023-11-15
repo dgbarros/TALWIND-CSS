@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartaõ de conexão</title>
+    <link rel="shortcut icon" href="../img/background-img.jfif" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,38 +21,50 @@
             }
         }
     </script>
+    <style>
+        body{
+            background-image: url(../img/background-img.jfif);
+            background-size: cover;
+        }
+    </style>
 </head>
-<body class=" bg-cinza-background  flex justify-center items-center h-screen">
-    <main class="bg-transparent p-8  rounded-2xl">
+<body class=" bg-cinza-background  flex justify-center items-center h-screen flex flex-col">
+    <header>
+        <h1 class="text-white p-8  text-4xl">
+            Cartão de Conexão
+        </h1>
+    </header>
+    <main class="bg-transparent p-8  rounded-2xl border border-white-500 ">
        <form class="">
-        <div class="">
-            <input class="w-full mt-2 p-2 border border-zinc-500 rounded-2xl" type="text" name="nome" required placeholder="Nome Completo">
-        </div>
-        <div>
-            <input class="w-full mt-2 p-2  border border-zinc-500 rounded-2xl" type="email" name="email" required placeholder="Email">
-        </div>
-        <div>
-            <input class="w-full mt-2 p-2  border border-zinc-500 rounded-2xl" type="tel" name="telefone" required placeholder="Telefone">
-        </div>
-        <div  class="flex flex-col">
-            <label class="m-2 text-white" ><strong>Conte-nos suas experiências</strong></label>
-                <textarea class="p-4  border border-zinc-500 rounded-2xl" row="15" style="width: 26em" id="problema" name="problema"></textarea>
-        </div>
-        <div class="flex flex-col">
-            <label class="m-2 text-white" ><strong>Objetivo:</strong></label>
-            <label class="text-white" >
-                <input type="radio" name="servicos" value="alinhamento"> Membresia
-            </label>
-            <label class="text-white" >
-                <input type="radio" name="servicos" value="funilaria"> Membresia
-            </label>
-            <label class="text-white" >
-                <input type="radio" name="servicos" value="revisao"> Membresia
-            </label>
-        </div>
-        
-         <button class=" mt-6 p-3 w-full bg-black text-white rounded-2xl" ><a href="caminho.html">Enviar</a></button>
+            <fieldset>
+                <div class="">
+                    <input class="w-full  mt-2 p-2 border border-zinc-500 rounded-2xl" type="text" name="nome" required placeholder="Nome Completo">
+                </div>
+                <div>
+                    <input class="w-full mt-2 p-2  border border-zinc-500 rounded-2xl" type="email" name="email" required placeholder="Email">
+                </div>
+                <div>
+                    <input class="w-full mt-2 p-2  border border-zinc-500 rounded-2xl" type="tel" name="telefone" required placeholder="Telefone">
+                </div>
+                <div  class="flex flex-col">
+                    <label class="m-2 text-white" ><strong>Conte-nos suas experiências</strong></label>
+                        <textarea class="p-4 w-auto  border border-zinc-500 rounded-2xl md:w-96" row="15" id="problema" name="problema"></textarea>
+                </div>
+                <div class="flex flex-col">
+                    <label class="m-2 text-white" ><strong>Objetivo:</strong></label>
+                    <label class="text-white" >
+                        <input type="radio" name="servicos" value="alinhamento"> Membresia
+                    </label>
+                    <label class="text-white" >
+                        <input type="radio" name="servicos" value="funilaria"> Membresia
+                    </label>
+                    <label class="text-white" >
+                        <input type="radio" name="servicos" value="revisao"> Membresia
+                    </label>
+                </div>
+            </fieldset>
        </form>
+       <button class=" mt-6 p-3 w-full bg-black text-white rounded-2xl" ><a href="caminho.html">Enviar</a></button>
     </main>
 </body>
 </html>
